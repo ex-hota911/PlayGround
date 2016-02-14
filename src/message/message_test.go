@@ -9,11 +9,3 @@ func TestMessage(t *testing.T) {
 		t.Errorf("got %v\nwanted %v", a, e)
 	}
 }
-
-func TestFail(t *testing.T) {
-	a := Message()
-	e := "こんにちは"
-	if a != e {
-		t.Errorf("got %v\nwanted %v", a, e)
-	}
-}

@@ -1,5 +1,3 @@
 test:
-  pre:
-    - export GOPATH=$(pwd)
   override:
-    - go test message
+    - go test -v ./...
